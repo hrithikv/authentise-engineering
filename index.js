@@ -29,6 +29,7 @@ app.oauth = new OAuth2Server({
   refreshTokenLifetime: model.JWT_REFRESH_TOKEN_EXPIRY_SECONDS
 })
 
+
 app.use(bodyParser.urlencoded({
   extended: true
 }))
