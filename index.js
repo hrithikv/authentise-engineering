@@ -14,8 +14,8 @@ import model from './model'
 
 let PORT = 3002
 let tobi = {
-  name: 'Infinite Team',
-  species: 'Open Source Technology co,.ltd'
+  name: 'Authentise Engineer',
+  species: 'Authentise Engineering'
 }
 
 const app = express()
@@ -51,10 +51,7 @@ app.use(bodyParser.json())
 
 app.use(app.oauth.authorize())
 
-app.post('/oauth/token', app.oauth.token()) //same grant()
-
-
-
+app.post('/oauth/token', app.oauth.token())
 
 app.engine('html', swig.renderFile)
 app.set('view engine', 'html')
@@ -71,9 +68,7 @@ app.get('/login', (req, res) => {
 
 console.log(model)
 
-// Get secret.
 app.get('/secret', app.oauth.authenticate(), function (req, res) {
-  // Will require a valid access_token.
   res.send('Secret area');
 })
 
