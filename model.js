@@ -28,7 +28,7 @@ const getClient = (clientId, clientSecret, callback) => {
 
 }
 
-const saveAuthorizationCode = (code, client, user) => { //same saveAuthCode()
+const saveAuthorizationCode = (code, client, user) => { 
 
 }
 const getAccessToken = (accessToken, callbacl) => {
