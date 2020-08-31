@@ -1,12 +1,12 @@
 {
-  "name": "oauth2-v0.1",
+  "name": "authentise-engineering",
   "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec babel-node index.js"
   },
-  "author": "",
+  "author": "hrithikv",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
