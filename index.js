@@ -9,9 +9,6 @@ import swig from 'swig'
 
 import model from './model'
 
-// const Request = OAuth2Server.Request
-// const Response = OAuth2Server.Response
-
 let PORT = 3002
 let tobi = {
   name: 'Authentise Engineer',
@@ -34,21 +31,6 @@ app.use(bodyParser.urlencoded({
   extended: true
 }))
 app.use(bodyParser.json())
-
-
-// let request = new Request({
-//   method: 'GET',
-//   query: {},
-//   headers: {
-//     Authorization: 'Bearer foobar'
-//   }
-// })
-
-// let response = new Response({
-//   headers: {}
-// })
-
-
 
 app.use(app.oauth.authorize())
 
